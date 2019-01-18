@@ -18,6 +18,7 @@
 */
 
 body {
+  direction:rtl;
   font-family: "PT Serif", Georgia, "Times New Roman", serif;
   font-size: 18px;
   color: #515151;
@@ -66,7 +67,7 @@ img {
 blockquote {
   margin: 10px 20px 10px;
   padding: 0px 15px;
-  border-left: 0.25em solid #ccc;
+  border-right: 0.25em solid #ccc;
   color: #999;
   line-height: 1.5;
 }
@@ -80,8 +81,8 @@ hr {
 */
 
 .container {
-  margin-left: auto;
   margin-right: auto;
+  margin-left: auto;
   width: 615px;
 }
 
@@ -168,7 +169,7 @@ hr {
 }
 
 .related-posts {
-  padding-left: 0px;
+  padding-right: 0px;
   list-style: none;
 }
 
@@ -237,17 +238,17 @@ hr {
 }
 
 .menu-content {
-  float: left;
+  float: right;
 }
 
 .menu-content a {
   color: #999;
   font-size: 1rem;
-  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .social-icons {
-  float: right;
+  float: left;
 }
 
 .social-icons a {
@@ -257,7 +258,7 @@ hr {
 
 @media (max-width: 30em) {
   .social-icons {
-    float: left;
+    float: right;
     padding-top: 0px;
   }
   .menu-content {
@@ -346,7 +347,7 @@ table, th, td {
 
 th, td {
   padding: 15px;
-  text-align: left;
+  text-align: right;
 }
 
 /*
@@ -354,7 +355,7 @@ th, td {
 */
 
 .sharing-icons a {
-  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .fa-envelope {

@@ -6,9 +6,9 @@ disqus:
 google-ID: 'UA-112060364-1'
 
 menu:
-- {name: 'About', path: 'menu', url: 'about.html'}
-- {name: 'Writing', path: 'menu', url: 'writing.html'}
-- {name: 'Contact', path: 'menu', url: 'contact.html'}
+- {name: 'درباره من', path: 'menu', url: 'about.html'}
+- {name: 'آرشیو مطالب', path: 'menu', url: 'writing.html'}
+- {name: 'تماس با من', path: 'menu', url: 'contact.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
@@ -21,11 +21,11 @@ social:
 
 # Customize site text
 pagination:
-  next_page: 'Newer'
-  previous_page: 'Older'
+  next_page: 'جدید تر'
+  previous_page: 'قدیمی تر'
 
-sharing_button_prompt: 'Feel free to share!'
+sharing_button_prompt: 'احساس آزادی برای اشتراک گذاری'
 
-related_posts: 'You may also enjoy:'
+related_posts: 'این هارا نیز دوست دارید :'
 
-post_date_prefix: 'Written on'
+post_date_prefix: 'نوشته شده در '
