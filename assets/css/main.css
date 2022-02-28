@@ -17,9 +17,19 @@
   Base
 */
 
+@font-face {
+  font-family: 'Samim';
+  src: url("../font/Samim-FD.woff") format("woff");
+}
+
+.e-text{
+  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+}
+
 body {
   direction:rtl;
-  font-family: "PT Serif", Georgia, "Times New Roman", serif;
+  font-family: 'Samim';
+  /* font-family: "PT Serif", Georgia, "Times New Roman", serif; */
   font-size: 18px;
   color: #515151;
   line-height: 1.75rem;
@@ -44,7 +54,8 @@ h1 a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: 'Samim';
+  /* font-family: "Quattrocento Sans", sans-serif; */
   color: #333;
 }
 
@@ -102,7 +113,8 @@ hr {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin-bottom: 4rem;
-  font-family: "Quattrocento Sans", sans-serif;
+  font-family: 'Samim';
+  /* font-family: "Quattrocento Sans", sans-serif; */
 }
 
 .masthead a:hover {
@@ -154,7 +166,8 @@ hr {
   margin-top:3px;
   margin-bottom: 1rem;
   color: #9a9a9a;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Samim';
+  /* font-family: 'Quattrocento Sans', sans-serif; */
   font-size:0.8rem;
 }
 
@@ -183,7 +196,8 @@ hr {
 
 .pagination {
   overflow: hidden;
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'Samim';
+  /* font-family: 'Quattrocento Sans', sans-serif; */
   text-align: center;
 }
 
