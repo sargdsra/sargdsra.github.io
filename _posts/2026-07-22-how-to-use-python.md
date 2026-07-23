@@ -53,18 +53,14 @@ plt.show()
 
 ## 🎯 نکات مهم
 
-    1. همیشه داده‌های خود را قبل از تحلیل بررسی کنید.
-
-    2. از روش‌های مختلف برای visualization استفاده کنید.
-
-    3. کد خود را بهینه‌سازی کنید.
+1. همیشه داده‌های خود را قبل از تحلیل بررسی کنید.
+2. از روش‌های مختلف برای visualization استفاده کنید.
+3. کد خود را بهینه‌سازی کنید.
 
 ## 📚 منابع مفید
 
-    [مستندات رسمی Pandas](https://pandas.pydata.org/) 
-
-    [مستندات Matplotlib](https://matplotlib.org/)
-    
-    [دوره آموزشی علم داده](https://example.com/)
+- [مستندات رسمی Pandas](https://pandas.pydata.org/) 
+- [مستندات Matplotlib](https://matplotlib.org/)
+- [دوره آموزشی علم داده](https://example.com/)
 
     
