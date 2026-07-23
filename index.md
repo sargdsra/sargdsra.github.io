@@ -20,7 +20,7 @@ title: صفحه اصلی
 
 {% for post in site.posts limit:5 %}
 - **[{{ post.title }}]({{ post.url }})**  
-  {{ post.date | persian_date: "%B %d, %Y" }}
+  {{ post.date }}
 {% endfor %}
 
 [مشاهده همه پست‌ها]({{ site.baseurl }}/blog/)
