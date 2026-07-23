@@ -9,8 +9,8 @@ layout: default
       <p>
         <strong>👤 نویسندگان:</strong> {{ page.authors }}<br>
         <strong>📄 ژورنال:</strong> {{ page.journal }}<br>
-        <strong>📅 سال انتشار:</strong> {{ page.year }}<br>
-        <strong>🕒 تاریخ بررسی:</strong> {{ page.date | persian_date: "%B %d, %Y" }}
+        <strong>📅 سال انتشار:</strong> <span class="en-num">{{ page.year }}</span><br>
+        <strong>🕒 تاریخ بررسی:</strong> <span class="en-num">{{ page.date | persian_date: "%B %d, %Y" }}</span>
       </p>
       {% if page.tags %}
         <div class="tags">

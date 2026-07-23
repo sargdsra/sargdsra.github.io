@@ -16,6 +16,8 @@ body {
   background-color: #f8f9fa;
   color: #2d3748;
   font-size: 16px;
+  /* ===== تنظیم اعداد فارسی ===== */
+  font-variant-numeric: persian;
 }
 
 /* ========== کانتینر اصلی ========== */
@@ -212,6 +214,8 @@ pre {
   font-family: 'Fira Code', 'Consolas', monospace;
   font-size: 0.9rem;
   line-height: 1.8;
+  /* ===== اعداد در کدها انگلیسی ===== */
+  font-variant-numeric: normal;
 }
 
 code {
@@ -223,6 +227,8 @@ code {
   direction: ltr;
   display: inline-block;
   unicode-bidi: embed;
+  /* ===== اعداد در کدهای خطی انگلیسی ===== */
+  font-variant-numeric: normal;
 }
 
 pre code {
@@ -297,7 +303,38 @@ footer .container {
   direction: rtl;
 }
 
-/* ========== کلاس‌های کمکی ========== */
+/* ======================================== */
+/* ===== مدیریت هوشمند اعداد فارسی/انگلیسی ===== */
+/* ======================================== */
+
+/*
+  کلاس‌های کمکی برای نمایش اعداد
+  استفاده: <span class="en-num">123</span>
+*/
+
+/* اعداد انگلیسی (برای استفاده در متن) */
+.en-num {
+  font-variant-numeric: normal;
+  direction: ltr;
+  unicode-bidi: embed;
+}
+
+/* اعداد انگلیسی درون متن فارسی (هم‌تراز با متن) */
+.en-inline {
+  direction: ltr;
+  display: inline-block;
+  unicode-bidi: embed;
+  font-variant-numeric: normal;
+}
+
+/* کلاس‌های خاص برای موارد ویژه */
+.version, .date, .math, .code {
+  direction: ltr;
+  font-variant-numeric: normal;
+  unicode-bidi: embed;
+}
+
+/* ========== کلاس‌های کمکی دیگر ========== */
 /* برای نوشته‌های انگلیسی داخل متن فارسی */
 .en {
   direction: ltr;
@@ -305,9 +342,9 @@ footer .container {
   unicode-bidi: embed;
 }
 
-/* برای اعداد فارسی */
+/* برای اعداد فارسی (در صورت نیاز به强制执行) */
 .fa-num {
-  font-feature-settings: "ss02";
+  font-variant-numeric: persian;
 }
 
 /* متن چپ‌چین برای کدها و محتوای انگلیسی */
