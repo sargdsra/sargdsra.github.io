@@ -12,7 +12,7 @@ collections:
     permalink: /papers/:title/
   posts:
     output: true
-    permalink: /posts/:title/
+    permalink: /blog/:title/
 
 # تنظیمات پیش‌فرض
 defaults:
@@ -23,6 +23,6 @@ defaults:
       layout: "paper"
   - scope:
       path: ""
-      type: "posts"
+      type: "blog"
     values:
       layout: "post"
