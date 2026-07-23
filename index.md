@@ -9,7 +9,7 @@ title: صفحه اصلی
 
 {% for paper in site.papers limit:5 %}
 - **[{{ paper.title }}]({{ paper.url }})**  
-  *{{ paper.authors }}* | {{ paper.journal }} (<div class="paper-year">{{ paper.year }}</div>)
+  *{{ paper.authors }}* | {{ paper.journal }} (<span class="paper-year">{{ paper.year }}</span>)
 {% endfor %}
 
 [مشاهده همه مقاله‌ها]({{ site.baseurl }}/papers/)
