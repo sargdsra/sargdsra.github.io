@@ -5,44 +5,49 @@ layout: default
 <article class="paper">
   <header class="paper-header">
     <h1>{{ page.title }}</h1>
-    <p class="paper-meta">
-      <strong>نویسندگان:</strong> {{ page.authors }}<br>
-      <strong>ژورنال:</strong> {{ page.journal }}<br>
-      <strong>سال انتشار:</strong> {{ page.year }}<br>
-      <strong>تاریخ بررسی:</strong> {{ page.date | persian_date: "%B %d, %Y" }}
-    </p>
-    {% if page.tags %}
-      <p class="tags">
-        <strong>برچسب‌ها:</strong>
-        {% for tag in page.tags %}
-          <span class="tag">#{{ tag }}</span>
-        {% endfor %}
+    <div class="paper-meta">
+      <p>
+        <strong>👤 نویسندگان:</strong> {{ page.authors }}<br>
+        <strong>📄 ژورنال:</strong> {{ page.journal }}<br>
+        <strong>📅 سال انتشار:</strong> {{ page.year }}<br>
+        <strong>🕒 تاریخ بررسی:</strong> {{ page.date | persian_date: "%B %d, %Y" }}
       </p>
-    {% endif %}
+      {% if page.tags %}
+        <div class="tags">
+          <strong>🏷️ برچسب‌ها:</strong>
+          {% for tag in page.tags %}
+            <span class="tag">#{{ tag }}</span>
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
   </header>
 
   <div class="paper-content">
     {{ content }}
   </div>
 
+  {% if page.download_link or page.supplementary_link or page.slides_link or page.code_link %}
   <section class="paper-downloads">
     <h2>📥 لینک‌های دانلود</h2>
     <ul>
       {% if page.download_link %}
-        <li><a href="{{ page.download_link }}" target="_blank">دانلود اصل مقاله (PDF)</a></li>
+        <li><a href="{{ page.download_link }}" target="_blank">📄 دانلود اصل مقاله (PDF)</a></li>
       {% endif %}
       {% if page.supplementary_link %}
-        <li><a href="{{ page.supplementary_link }}" target="_blank">دانلود فایل‌های ضمیمه</a></li>
+        <li><a href="{{ page.supplementary_link }}" target="_blank">📦 دانلود فایل‌های ضمیمه</a></li>
       {% endif %}
       {% if page.slides_link %}
-        <li><a href="{{ page.slides_link }}" target="_blank">دانلود اسلایدها</a></li>
+        <li><a href="{{ page.slides_link }}" target="_blank">📊 دانلود اسلایدها</a></li>
       {% endif %}
       {% if page.code_link %}
-        <li><a href="{{ page.code_link }}" target="_blank">مشاهده کدها در گیت‌هاب</a></li>
+        <li><a href="{{ page.code_link }}" target="_blank">💻 مشاهده کدها در گیت‌هاب</a></li>
       {% endif %}
     </ul>
   </section>
+  {% endif %}
 
+  {% if page.related_papers %}
   <section class="paper-related">
     <h2>🔗 مقاله‌های مرتبط</h2>
     <ul>
@@ -51,4 +56,5 @@ layout: default
       {% endfor %}
     </ul>
   </section>
+  {% endif %}
 </article>

@@ -23,6 +23,11 @@ defaults:
       layout: "paper"
   - scope:
       path: ""
-      type: "blog"
+      type: "posts"
     values:
       layout: "post"
+
+# تنظیمات فونت
+font:
+  primary: "Vazir"
+  code: "Fira Code"
