@@ -1,7 +1,7 @@
 ---
 layout: default
 title: همه پست‌ها
-permalink: /posts/
+permalink: /blog/
 ---
 
 # ✍️ همه پست‌های وبلاگ

@@ -23,4 +23,4 @@ title: صفحه اصلی
   {{ post.date | persian_date: "%B %d, %Y" }}
 {% endfor %}
 
-[مشاهده همه پست‌ها]({{ site.baseurl }}/posts/)
+[مشاهده همه پست‌ها]({{ site.baseurl }}/blog/)
