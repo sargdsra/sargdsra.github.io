@@ -1,0 +1,17 @@
+---
+layout: default
+title: همه پست‌ها
+permalink: /posts/
+---
+
+# ✍️ همه پست‌های وبلاگ
+
+<ul>
+{% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <br>
+    <small>{{ post.date | persian_date: "%B %d, %Y" }}</small>
+  </li>
+{% endfor %}
+</ul>

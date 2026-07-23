@@ -1,0 +1,180 @@
+/* تنظیمات پایه */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Vazir', 'Tahoma', sans-serif;
+  line-height: 1.8;
+  background-color: #f8f9fa;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* هدر و فوتر */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.2);
+}
+
+/* مقاله‌ها و پست‌ها */
+.paper, .post {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  margin: 30px 0;
+}
+
+.paper-header, .post-header {
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #2d3748;
+  margin-bottom: 15px;
+}
+
+.paper-meta, .post-meta {
+  color: #718096;
+  font-size: 0.95rem;
+}
+
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-block;
+  background: #edf2f7;
+  padding: 3px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  margin: 0 3px;
+  color: #4a5568;
+}
+
+/* بخش دانلود */
+.paper-downloads, .paper-related {
+  background: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+.paper-downloads ul, .paper-related ul {
+  list-style: none;
+  padding: 0;
+}
+
+.paper-downloads li, .paper-related li {
+  margin: 10px 0;
+}
+
+.paper-downloads a, .paper-related a {
+  color: #667eea;
+  text-decoration: none;
+  padding: 8px 15px;
+  background: white;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all 0.3s;
+  border: 1px solid #e2e8f0;
+}
+
+.paper-downloads a:hover, .paper-related a:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+/* کدها */
+pre {
+  background: #1a202c;
+  color: #f7fafc;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+code {
+  font-family: 'Fira Code', 'Consolas', monospace;
+  font-size: 0.9rem;
+}
+
+/* تصاویر */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* فوتر */
+footer {
+  background: #2d3748;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* پاسخگو */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  nav {
+    margin-top: 15px;
+  }
+  
+  nav a {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+  
+  .paper, .post {
+    padding: 15px;
+  }
+}

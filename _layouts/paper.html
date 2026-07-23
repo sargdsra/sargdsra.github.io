@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<article class="paper">
+  <header class="paper-header">
+    <h1>{{ page.title }}</h1>
+    <p class="paper-meta">
+      <strong>نویسندگان:</strong> {{ page.authors }}<br>
+      <strong>ژورنال:</strong> {{ page.journal }}<br>
+      <strong>سال انتشار:</strong> {{ page.year }}<br>
+      <strong>تاریخ بررسی:</strong> {{ page.date | persian_date: "%B %d, %Y" }}
+    </p>
+    {% if page.tags %}
+      <p class="tags">
+        <strong>برچسب‌ها:</strong>
+        {% for tag in page.tags %}
+          <span class="tag">#{{ tag }}</span>
+        {% endfor %}
+      </p>
+    {% endif %}
+  </header>
+
+  <div class="paper-content">
+    {{ content }}
+  </div>
+
+  <section class="paper-downloads">
+    <h2>📥 لینک‌های دانلود</h2>
+    <ul>
+      {% if page.download_link %}
+        <li><a href="{{ page.download_link }}" target="_blank">دانلود اصل مقاله (PDF)</a></li>
+      {% endif %}
+      {% if page.supplementary_link %}
+        <li><a href="{{ page.supplementary_link }}" target="_blank">دانلود فایل‌های ضمیمه</a></li>
+      {% endif %}
+      {% if page.slides_link %}
+        <li><a href="{{ page.slides_link }}" target="_blank">دانلود اسلایدها</a></li>
+      {% endif %}
+      {% if page.code_link %}
+        <li><a href="{{ page.code_link }}" target="_blank">مشاهده کدها در گیت‌هاب</a></li>
+      {% endif %}
+    </ul>
+  </section>
+
+  <section class="paper-related">
+    <h2>🔗 مقاله‌های مرتبط</h2>
+    <ul>
+      {% for related in page.related_papers %}
+        <li><a href="{{ related.url }}" target="_blank">{{ related.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </section>
+</article>

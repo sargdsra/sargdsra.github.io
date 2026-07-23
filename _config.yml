@@ -1,0 +1,28 @@
+title: "مجله علمی من"
+description: "بررسی مقاله‌ها و مطالب علمی"
+baseurl: ""
+url: "https://sargdsra.github.io"
+markdown: kramdown
+highlighter: rouge
+
+# تنظیمات Collections
+collections:
+  papers:
+    output: true
+    permalink: /papers/:title/
+  posts:
+    output: true
+    permalink: /posts/:title/
+
+# تنظیمات پیش‌فرض
+defaults:
+  - scope:
+      path: ""
+      type: "papers"
+    values:
+      layout: "paper"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
