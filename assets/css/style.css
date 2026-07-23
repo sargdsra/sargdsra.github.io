@@ -390,6 +390,16 @@ footer .container {
   -moz-font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
 }
 
+/* اعداد فارسی در لیست‌ها */
+ol.fa-numbers li {
+  list-style-type: persian;
+}
+
+/* برای اعداد فارسی در لیست‌های سفارشی */
+.fa-list {
+  list-style-type: persian;
+}
+
 /* متن چپ‌چین برای کدها و محتوای انگلیسی */
 .ltr {
   direction: ltr;
