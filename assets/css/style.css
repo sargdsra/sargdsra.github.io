@@ -16,8 +16,39 @@ body {
   background-color: #f8f9fa;
   color: #2d3748;
   font-size: 16px;
-  /* ===== تنظیم اعداد فارسی ===== */
-  font-variant-numeric: persian;
+}
+
+/* ======================================== */
+/* ===== راه‌حل تضمینی برای اعداد فارسی ===== */
+/* ======================================== */
+
+/* روش اول: استفاده از Unicode-range برای اعداد */
+@font-face {
+  font-family: 'Samim-FA';
+  src: url('https://cdn.jsdelivr.net/gh/rastikerdar/samim-font@v4.0.0/dist/Samim.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  /* فقط اعداد فارسی رو پوشش بده */
+  unicode-range: U+0600-06FF, U+FB50-FDFF, U+FE70-FEFF;
+}
+
+/* اعمال فونت با پشتیبانی از اعداد فارسی */
+body {
+  font-family: 'Samim-FA', 'Samim', 'Vazir', 'Tahoma', 'Arial', sans-serif;
+}
+
+/* روش دوم: استفاده از ویژگی‌های CSS پیشرفته */
+.number-fa {
+  font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
+  -webkit-font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
+  -moz-font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
+}
+
+/* اعمال به همه متن‌ها */
+p, h1, h2, h3, h4, h5, h6, li, td, th, .paper-meta, .post-meta {
+  font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
+  -webkit-font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
+  -moz-font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
 }
 
 /* ========== کانتینر اصلی ========== */
@@ -215,7 +246,9 @@ pre {
   font-size: 0.9rem;
   line-height: 1.8;
   /* ===== اعداد در کدها انگلیسی ===== */
-  font-variant-numeric: normal;
+  font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
 }
 
 code {
@@ -228,7 +261,9 @@ code {
   display: inline-block;
   unicode-bidi: embed;
   /* ===== اعداد در کدهای خطی انگلیسی ===== */
-  font-variant-numeric: normal;
+  font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
 }
 
 pre code {
@@ -314,7 +349,9 @@ footer .container {
 
 /* اعداد انگلیسی (برای استفاده در متن) */
 .en-num {
-  font-variant-numeric: normal;
+  font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
   direction: ltr;
   unicode-bidi: embed;
 }
@@ -324,13 +361,17 @@ footer .container {
   direction: ltr;
   display: inline-block;
   unicode-bidi: embed;
-  font-variant-numeric: normal;
+  font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
 }
 
 /* کلاس‌های خاص برای موارد ویژه */
 .version, .date, .math, .code {
   direction: ltr;
-  font-variant-numeric: normal;
+  font-feature-settings: normal;
+  -webkit-font-feature-settings: normal;
+  -moz-font-feature-settings: normal;
   unicode-bidi: embed;
 }
 
@@ -344,7 +385,9 @@ footer .container {
 
 /* برای اعداد فارسی (در صورت نیاز به强制执行) */
 .fa-num {
-  font-variant-numeric: persian;
+  font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
+  -webkit-font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
+  -moz-font-feature-settings: "ss02" on, "ss03" on, "cv01" on;
 }
 
 /* متن چپ‌چین برای کدها و محتوای انگلیسی */
