@@ -11,7 +11,7 @@ permalink: /blog/
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a>
     <br>
-    <small>{{ post.date }}</small>
+    <small>{{ post.tarikh }}</small>
   </li>
 {% endfor %}
 </ul>
