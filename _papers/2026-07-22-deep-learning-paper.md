@@ -2,7 +2,7 @@
 title: "بررسی عمیق مدل‌های Transformer در پردازش زبان طبیعی"
 authors: "احمد رضایی، سارا محمدی، علی کریمی"
 journal: "Journal of Machine Learning Research"
-year: 2026
+year: <span class="paper-year">2026</span>
 download_link: "https://example.com/paper.pdf"
 supplementary_link: "https://example.com/supplementary.zip"
 slides_link: "https://example.com/slides.pdf"
