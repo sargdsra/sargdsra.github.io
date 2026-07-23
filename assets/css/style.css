@@ -1,5 +1,5 @@
 /* ========== تنظیمات فونت فارسی ========== */
-@import url('https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v30.1.0/dist/font-face.css');
+@import url('https://cdn.jsdelivr.net/gh/rastikerdar/samim-font@v4.0.0/dist/font-face.css');
 
 /* ========== تنظیمات پایه ========== */
 * {
@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: 'Vazir', 'Tahoma', 'Arial', sans-serif;
+  font-family: 'Samim', 'Vazir', 'Tahoma', 'Arial', sans-serif;
   direction: rtl;
   text-align: right;
   line-height: 2;
