@@ -12,7 +12,7 @@ collections:
     permalink: /papers/:title/
   posts:
     output: true
-    permalink: /blog/:title/
+    permalink: /posts/:title/
 
 # تنظیمات پیش‌فرض
 defaults:
