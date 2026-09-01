@@ -33,11 +33,23 @@ layout: default
       {% if page.download_link %}
         <li><a href="{{ page.download_link }}" target="_blank">📄 دانلود اصل مقاله (PDF)</a></li>
       {% endif %}
+      {% if page.sup_per %}
+        <li><a href="{{ page.sup_per }}" target="_blank">📄 دانلود خلاصه فارسی مقاله (PDF)</a></li>
+      {% endif %}
+      {% if page.sup_eng %}
+        <li><a href="{{ page.sup_eng }}" target="_blank">📄 دانلود خلاصه انگلیسی مقاله (PDF)</a></li>
+      {% endif %}
       {% if page.supplementary_link %}
         <li><a href="{{ page.supplementary_link }}" target="_blank">📦 دانلود فایل‌های ضمیمه</a></li>
       {% endif %}
       {% if page.slides_link %}
         <li><a href="{{ page.slides_link }}" target="_blank">📊 دانلود اسلایدها</a></li>
+      {% endif %}
+      {% if page.pod_link %}
+        <li><a href="{{ page.pod_link }}" target="_blank">📦 دانلود پادکست</a></li>
+      {% endif %}
+      {% if page.video_link %}
+        <li><a href="{{ page.video_link }}" target="_blank">📦 دانلود ویدئو</a></li>
       {% endif %}
       {% if page.code_link %}
         <li><a href="{{ page.code_link }}" target="_blank">💻 مشاهده کدها در گیت‌هاب</a></li>

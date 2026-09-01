@@ -157,13 +157,13 @@ h3 {
 }
 
 .paper-meta, .post-meta {
-  color: #718096;
+  color: #000000;
   font-size: 0.95rem;
   line-height: 2;
 }
 
 .paper-meta strong, .post-meta strong {
-  color: #4a5568;
+  color: #000000;
 }
 
 /* ========== برچسب‌ها ========== */
