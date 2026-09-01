@@ -11,14 +11,6 @@ layout: default
         <strong>📄 ژورنال:</strong> {{ page.journal }}<br>
         <strong>📅 سال انتشار:</strong> {{ page.year }}<br>
       </p>
-      {% if page.tags %}
-        <div class="tags">
-          <strong>🏷️ برچسب‌ها:</strong>
-          {% for tag in page.tags %}
-            <span class="tag">#{{ tag }}</span>
-          {% endfor %}
-        </div>
-      {% endif %}
     </div>
   </header>
 
