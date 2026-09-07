@@ -9,5 +9,6 @@ sup_eng: "https://drive.google.com/file/d/10BLkNIP5qYjF9D_NxqP6J1s2ZlvbLaoz/"
 slides_link: "https://docs.google.com/presentation/d/1ZShSmuO8Nqijqy-2bHo5MlgZTTVU6gQr/"
 pod_link: "https://www.aparat.com/v/zoudok6"
 video_link: "https://www.aparat.com/v/muwdqrh"
+code_link: "https://github.com/sargdsra/CMI-Conditional-Independence-Test"
 ---
 
