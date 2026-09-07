@@ -9,6 +9,6 @@ sup_eng: "https://drive.google.com/file/d/1I7-yaQc3eVe1XLkbx9Rqr1lcIMGWQmv2/"
 slides_link: "https://docs.google.com/presentation/d/14A30ckR6I3UJzJxn_PPobOLUDJ_SHE6u/"
 pod_link: "https://www.aparat.com/v/eou6q8u"
 video_link: "https://www.aparat.com/v/oivg28f"
-code_link: "https://github.com/sargdsra/SelfAugment-Automatic-Augmentation"
+code_link: "https://github.com/cjrd/selfaugment"
 ---
 
