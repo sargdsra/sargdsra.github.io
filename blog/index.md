@@ -5,7 +5,7 @@ permalink: /blog/
 ---
 
 # ✍️ همه پست‌های وبلاگ
-
+{% assign last_post = site.posts | reverse %}
 <ul>
 {% for post in site.posts %}
   <li>

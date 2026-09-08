@@ -5,9 +5,9 @@ permalink: /papers/
 ---
 
 # 📄 همه مقاله‌های علمی
-
+{% assign last_papers = site.papers | reverse %}
 <ul>
-{% for paper in site.papers %}
+{% for paper in last_papers %}
   <li>
     <a href="{{ paper.url }}">{{ paper.title }}</a>
     <br>

@@ -7,7 +7,8 @@ title: صفحه اصلی
 
 ## 📄 جدیدترین مقاله‌های علمی
 
-{% for paper in site.papers limit:5 %}
+{% assign last_papers = site.papers | reverse %}
+{% for paper in last_papers limit:5 %}
 - **[{{ paper.title }}]({{ paper.url }})**  
   *{{ paper.authors }}* | {{ paper.journal }} ({{ paper.year }})
 {% endfor %}
@@ -18,7 +19,8 @@ title: صفحه اصلی
 
 ## ✍️ جدیدترین پست‌های وبلاگ
 
-{% for post in site.posts limit:5 %}
+{% assign last_post = site.posts | reverse %}
+{% for post in last_post limit:5 %}
 - **[{{ post.title }}]({{ post.url }})**  
   {{ post.tarikh }}
 {% endfor %}
